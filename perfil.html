@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/perfil.css">
+    <title>CodeConnect - Perfil</title>
+</head>
+
+<body>
+    <aside>
+        <img src="img/Logo.svg" alt="logo CodeConnect">
+        <nav>
+            <ul class="lista-links">
+                <li>
+                    <a href="index.html" class="link-destaque">Publicar</a>
+                </li>
+                <li>
+                    <a href="feed.html">
+                        <img src="img/feed.svg" alt="Feed">
+                        Feed
+                    </a>
+                </li>
+                <li>
+                    <a href="perfil.html">
+                        <img src="img/account_circle.svg" alt="Perfil">
+                        Perfil
+                    </a>
+                </li>
+                <li>
+                    <a href="sobreNos.html">
+                        <img src="img/info.svg" alt="Sobre nós">
+                        Sobre nós
+                    </a>
+                </li>
+                <li>
+                    <a href="sair.html">
+                        <img src="img/logout.svg" alt="Sair">
+                        Sair
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <div class="container-perfil">
+            <div class="imagem-container">
+            <a href="#" class="imagem-perfil" id="img-perfil">Adicionar Imagem</a>
+            <input type="file" id="image-upload" accept="image/" style="display: none;" />
+            </div>
+            <div class="dados-perfil">
+                <div class="perfil-username">
+                <span class="perfi-username editavel" contenteditable="true" placeholder="Username" id="username"></span>
+                    <span>
+                        <button class="seguir-perfil-botao">Seguir</button> 
+                    </span>
+                </div>
+                <div class="perfil-nome">
+                    <span class= "perfil-nome editavel" contenteditable="true" id="nome"></span>
+                </div> 
+                <div class="perfil-descricao editavel" id="descricaoPerfil" contenteditable="true"></div>
+                <div class="perfil-status">
+                    <span>3 Projetos</span> | <span>Conexões</span>
+                </div>
+            </div>  
+             
+        </div>
+       
+        <hr/>
+        <div class="nav-botoes">
+            <a href="#">Meus Projetos</a>
+            <a href="#">Aprovados</a>
+            <a href="#">Compartilhados</a>
+        </div>
+        
+        <div class="container-card" >
+            <div class ="card-projetos" id="card-projetos-feed">
+                <div class = imagem-projeto>
+                    <img src="img/imagem1.png" alt="Pré-vizualização do Projeto" class="imagem-principal">
+                </div>
+                <div class="descricao-projeto">
+                    <h2 class="titulo-projeto">Titulo do Post do Projeto</h2>
+                    <p class="texto-projeto">Aqui eu vou fazer um resumo sobre o projeto que eu escrevi!Tera no minimo 3 linhas. Entao vou escrever qualquer coisa agora para ficar mais facil de estilizar.</p>
+                </div>
+                <div class="icones-projetos">
+                    <div>
+                    <img src="img/code.png" alt="Código">
+                    <p class="icone-contagem">5</p>
+                    </div>
+                    <div>
+                    <img src="img/share.png" alt="Compartilhar">
+                    <p class="icone-contagem">5</p>
+                    </div>
+                    <div>
+                    <img src="img/chat.png" alt="Comentar">
+                    <p class="icone-contagem">5</p>
+                    </div>
+                </div>
+                <div class="icone-perfil">
+                    <img src="./img/Captura de Tela 2024-06-11 às 15.49.57.png" alt="Perfil Thales">
+                    <p>@thalesvarga</p>
+                </div>
+            </div>
+            <div class = "card-projetos">
+                <div class = imagem-projeto>
+                    <img src="img/imagem1.png" alt="Pré-vizualização do Projeto" class="imagem-principal">
+                </div>
+                <div class="descricao-projeto">
+                    <h2 class="titulo-projeto">Titulo do Post do Projeto</h2>
+                    <p class="texto-projeto">Aqui eu vou fazer um resumo sobre o projeto que eu escrevi!Tera no minimo 3 linhas. Entao vou escrever qualquer coisa agora para ficar mais facil de estilizar.</p>
+                </div>
+                <div class="icones-projetos">
+                    <div>
+                    <img src="img/code.png" alt="Código">
+                    <p class="icone-contagem">5</p>
+                    </div>
+                    <div>
+                    <img src="img/share.png" alt="Compartilhar">
+                    <p class="icone-contagem">5</p>
+                    </div>
+                    <div>
+                    <img src="img/chat.png" alt="Comentar">
+                    <p class="icone-contagem">5</p>
+                    </div>
+                </div>
+                <div class="icone-perfil">
+                    <img src="./img/Captura de Tela 2024-06-11 às 15.49.57.png" alt="Perfil Thales">
+                    <p>@thalesvarga</p>
+                </div>
+            </div>
+            <div class ="card-projetos">
+                <div class = imagem-projeto>
+                    <img src="img/imagem1.png" alt="Pré-vizualização do Projeto" class="imagem-principal">
+                </div>
+                <div class="descricao-projeto">
+                    <h2 class="titulo-projeto">Titulo do Post do Projeto</h2>
+                    <p class="texto-projeto">Aqui eu vou fazer um resumo sobre o projeto que eu escrevi!Tera no minimo 3 linhas. Entao vou escrever qualquer coisa agora para ficar mais facil de estilizar.</p>
+                </div>
+                <div class="icones-projetos">
+                    <div>
+                    <img src="img/code.png" alt="Código">
+                    <p class="icone-contagem">5</p>
+                    </div>
+                    <div>
+                    <img src="img/share.png" alt="Compartilhar">
+                    <p class="icone-contagem">5</p>
+                    </div>
+                    <div>
+                    <img src="img/chat.png" alt="Comentar">
+                    <p class="icone-contagem">5</p>
+                    </div>
+                </div>
+                <div class="icone-perfil">
+                    <img src="./img/Captura de Tela 2024-06-11 às 15.49.57.png" alt="Perfil Thales">
+                    <p>@thalesvarga</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="/JS/perfil.js" type="module"></script>
+
+</html>

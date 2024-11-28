@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --background-color: #00090E;
+    --text-color: #E1E1E1;
+    --primary-color: #81FE88;
+    --secondary-color: #888888;
+    --tag-color: #171D1F;
+    --font-family: "Prompt", sans-serif;
+    --itens-background: #171D1F;
+    --font-family-codigo: "Roboto Mono", monospace;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    height: 100vh;
+    gap: 27px;
+    padding: 56px 0;
+}
+aside {
+    background-color: var(--itens-background);
+    border-bottom: 10px;
+    height: 100%;
+    padding: 40px 16px;
+    text-align: center;
+
+}
+
+.lista-links{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 80px;
+    align-items: center;
+    list-style-type: none;
+
+}
+.lista-links li a{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 26px;
+
+}
+
+.lista-links li:first-of-type a{
+    color: var(--primary-color);
+
+}
+
+.link-destaque{
+    border: 1px solid var(--primary-color);
+    padding: 12px 30px;
+    border-radius: 8px;
+
+}
+
+.container-publicado-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    width: 996px;
+    gap: 20px;
+    margin-bottom: 20px;
+   
+}
+#projetos-publicado-card{ 
+   height: 630px;
+   background-color: var(--itens-background);
+   position: relative;
+   border-radius: 8px;
+}
+
+#imagem-publicado-card{
+    height: 360px;
+    width: 996px;
+    padding: 15px;
+    background-color: var(--secondary-color);
+    border-top-left-radius: 8px;
+    border-top-right-radius:8px;
+}
+
+.imagem-principal-publicado{
+   width: 438px;
+   border-radius: 8px;
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+.descricao-projeto-publicado{
+    gap:16px ;
+    padding: 16px;
+   
+}
+
+.titulo-projeto-publicado{
+    font-family: var(--font-family);
+    color: var(--secondary-color);
+
+}
+
+.texto-projeto-publicado{
+    font-family: var(--font-family);
+    color: var(--secondary-color);
+
+}
+
+.icones-projetos-publicado{
+    display: flex;
+    text-align: center;
+    gap: 15px;
+    position: absolute;
+    bottom: 12px;
+    padding: 0 16px;
+   
+}
+
+.icones-projetos-publicado img{
+    width: 18px;
+    height: 18px;
+}
+
+.icone-perfil-publicado{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 12px;
+    right: 17px;
+    padding: 6px 16px;
+}
+
+.img-perfil-login{
+    width: 35px;
+    height: 35px;
+    border-radius: 50% ;
+    border: 3px solid var(--itens-background);
+    object-fit: cover;
+}
+
+.icone-perfil-publicado p{
+    font-family: var(--font-family);
+    font-size: 15px;
+    
+}
+
+.card-codigo{
+    background-color: var(--itens-background);
+    height: 293px;
+    border-radius: 8px;
+    padding: 16px;
+    gap: 8px;
+    overflow-y: scroll;
+
+}
+
+.card-codigo:focus-within {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+
+.textarea-codigo{
+   font-family: var(--font-family-codigo);
+    font-size: 15px;
+    line-height: 19.5px;
+    font-weight: 400;
+}
+
+.container-comentarios{
+    width: 996px;
+    gap: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+}
+
+.mensagens{
+    display: flex;
+    align-items: center;
+}
+
+.mensagens .barra-mensagens {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    padding: 0;
+    
+    border-radius: 5px;
+    padding: 4px; 
+    padding-left: 4px;
+    width: 100%;
+    font-size: 12px; 
+    box-sizing: border-box;
+    background-color: var(--secondary-color);
+} 
+
+.barra-mensagens::placeholder{
+    font-family: var(--font-family);
+    color:var(--tag-color);
+} 
+
+.icone-perfil-comentario{
+    width: 35px;
+    height: 35px;
+    border-radius: 50% ;
+    border: 3px solid var(--itens-background);
+    object-fit: cover;
+    margin-right: 7px;
+}
+
+
+
+.card-comentarios{
+   background-color: var(--itens-background);
+   padding: 16px;
+   gap: 8px;
+   border-radius: 8px;
+}
+
+.estrutura-comentario{
+    display: flex;
+    justify-content:flex-start;
+    padding: 4px;
+}
+
+.foto-perfil {
+    border-radius: 50%;
+    border: 1px solid var(--background-color);
+    align-items: center;
+    object-fit: cover;
+    width: 35px;
+    height: 35px;
+}
+
+.nome-usuario{
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    font-family: var(--font-family);
+    
+}
+
+.comentario{
+    display: flex;
+    align-items: center;
+    font-family: var(--font-family);
+}
+
+.responder-btn{
+    padding-left: 70px;
+    font-family: var(--font-family);
+    background-color: none;
+    border: none;
+    border-radius: none;
+    background:none;
+    color: var(--text-color);
+}
+
+.toggle-respostas-btn{
+    padding-left: 10px;
+    margin: 10px;
+    font-family: var(--font-family);
+    font-weight: 00;
+    background-color: none;
+    border: none;
+    border-radius: none;
+    background:none;
+    color: var(--text-color);
+}
+
+.div-deletar-comentario{
+display: flex;
+max-width: 996px;
+
+}
+
+.deletar-comentario{
+display: flex;
+justify-content: space-between;
+  
+}
+
+
+
+

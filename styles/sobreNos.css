@@ -1,0 +1,182 @@
+:root {
+    --background-color: #00090E;
+    --text-color: #E1E1E1;
+    --primary-color: #81FE88;
+    --secondary-color: #888888;
+    --tag-color: #171D1F;
+    --font-family: "Prompt", sans-serif;
+    --itens-background: #171D1F;
+    --font-family-codigo: "Roboto Mono", monospace;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    height: 100vh;
+    gap: 27px;
+    padding: 56px 0;
+}
+
+aside {
+    background-color: var(--itens-background);
+    border-bottom: 10px;
+    height: 100%;
+    padding: 40px 16px;
+    text-align: center;
+
+}
+
+.lista-links{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 80px;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+.lista-links li a{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 26px;
+
+}
+
+.lista-links li:first-of-type a{
+    color: var(--primary-color);
+
+}
+
+.link-destaque{
+    border: 1px solid var(--primary-color);
+    padding: 12px 30px;
+    border-radius: 8px;
+
+}
+
+main{
+    width: 995px;
+
+}
+
+.container-sobrenos{
+    display: flex;
+    height: 365px;
+    margin: 5px 0px 15px 0px;
+}
+
+.sobrenos-bemvindo{
+    text-align: center;
+    margin-top: 36px;
+    font-size: 28px;
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    font-weight: 500;
+    
+}
+
+.sobrenos-subtitulo{
+    text-align: center;
+    font-size: 26px;
+    margin: 10px 0px;
+    color: var(--secondary-color);
+    font-weight: 400;
+
+}
+
+.sobrenos-titulo p {
+    font-size: 18px;
+    font-weight: 200;
+    margin: 10px 0px;
+    text-align: justify;
+}
+
+.contanier-nossamissao{
+    display:flex;
+    align-items: flex-start;
+  
+}
+
+.sobrenos-nossamissao{
+    flex: 1;
+    margin-right:20px;
+
+}
+
+.sobrenos-nossamissao h4{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+    font-weight: 400;
+   
+}
+
+.sobrenos-nossamissao p{
+    font-size: 18px;
+    text-align: justify;
+    font-weight: 200;
+
+}
+
+.sobrenos-imagem{
+    flex: 0 0 280px;
+    margin-left: 10px;
+
+}
+.sobrenos-imagem img{
+    max-width: 100%;
+    height: auto;
+}
+
+.sobrenos-juntos h4{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+
+.sobrenos-juntos p{
+    font-size: 18px;
+    text-align: justify;
+    font-weight: 200;
+}
+
+.sobrenos-logofrase{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.sobrenos-logofrase img{
+    width: 50px;
+    margin: 5px;
+}
+
+.sobrenos-logofrase p{
+    margin-left: 10px;
+    font-size: 24px;
+    line-height: 3;
+    text-align: justify;
+    color: var(--secondary-color);
+}
+
+    
+
+
