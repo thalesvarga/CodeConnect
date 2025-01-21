@@ -23,3 +23,8 @@ Projeto em andamento, sendo realizado por mim com intuito de praticar tudo que e
 - ``JavaScript``
 - ``HTML``
 - ``CSS``
+- ``Uso de módulos (import e export) para organização e reutilização de arquivos e funções;``
+- ``Armazenamento de dados no LocalStorage para manter informações como atividades e cadastros de login, mesmo após o fechamento da página;``
+- ``Design responsivo com suporte para versões Desktop, Mobile e Tablet;``
+- ``Utilização do método filter para manipulação e recuperação de informações no LocalStorage;``
+- ``Manipulação eficiente do DOM para interatividade e atualização da interface;``
